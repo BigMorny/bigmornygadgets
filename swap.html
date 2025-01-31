@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone Swap - iPhone Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>iPhone Swap</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="swap.html">Swap</a></li>
+        <li><a href="repair.html">Repair</a></li>
+        <li><a href="we-buy.html">We Buy</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Swap Form Section -->
+  <section id="swap">
+    <h2>Swap Your iPhone</h2>
+    <p>Fill in the details about your iPhone and the one you want to swap it for.</p>
+
+    <form id="swap-form">
+      <div class="form-container">
+        <!-- Column 1: Your iPhone Details -->
+        <div class="form-column">
+          <h3>Your iPhone Details</h3>
+
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="contact">Phone Number:</label>
+          <input type="tel" id="contact" name="contact" required>
+
+          <label for="model">iPhone Model:</label>
+          <input type="text" id="model" name="model" placeholder="e.g., iPhone 11" required>
+
+          <label for="storage">Storage Capacity:</label>
+          <select id="storage" name="storage">
+            <option value="64GB">64GB</option>
+            <option value="128GB">128GB</option>
+            <option value="256GB">256GB</option>
+            <option value="512GB">512GB</option>
+          </select>
+
+          <label for="battery">Battery Health (%):</label>
+          <input type="number" id="battery" name="battery" min="50" max="100" required>
+        </div>
+
+        <!-- Column 2: Condition & Preferred Swap -->
+        <div class="form-column">
+          <h3>Condition & Swap Preferences</h3>
+
+          <label for="screen">Is the screen cracked?</label>
+          <select id="screen" name="screen">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+          </select>
+
+          <label for="back">Is the back cracked?</label>
+          <select id="back" name="back">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+          </select>
+
+          <label for="camera">Is the camera working properly?</label>
+          <select id="camera" name="camera">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+
+          <label for="desired_model">Preferred iPhone Model:</label>
+          <input type="text" id="desired_model" name="desired_model" placeholder="e.g., iPhone 12 Pro Max" required>
+
+          <label for="difference">Are you willing to pay the price difference?</label>
+          <select id="difference" name="difference">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-actions">
+        <button type="submit">Submit Swap Request</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 iPhone Hub. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
