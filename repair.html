@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone Repair - iPhone Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>iPhone Repair</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="swap.html">Swap</a></li>
+        <li><a href="repair.html">Repair</a></li>
+        <li><a href="we-buy.html">We Buy</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Repair Form Section -->
+  <section id="repair">
+    <h2>Request a Repair</h2>
+    <p>Fill in your details, and describe the problem with your iPhone.</p>
+
+    <form id="repair-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="contact">Phone Number:</label>
+      <input type="tel" id="contact" name="contact" required>
+
+      <label for="model">iPhone Model:</label>
+      <input type="text" id="model" name="model" placeholder="e.g., iPhone 12" required>
+
+      <label for="opened">Has the phone been opened before?</label>
+      <select id="opened" name="opened">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+      </select>
+
+      <label for="problem">Describe the problem:</label>
+      <textarea id="problem" name="problem" rows="4" placeholder="Explain the issue..." required></textarea>
+
+      <button type="submit">Submit Repair Request</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 iPhone Hub. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
