@@ -3,46 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iPhone Hub - We Buy</title>
+  <title>Big Morny Gadgets - We Buy Your Device</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>iPhone Hub</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="swap.html">Swap</a></li>
-        <li><a href="repair.html">Repair</a></li>
-        <li><a href="we-buy.html">We Buy</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
+    <div class="header-container">
+      <h1>Big Morny Gadgets</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="swap.html">Swap</a></li>
+          <li><a href="repair.html">Repair</a></li>
+          <li><a href="we-buy.html" class="active">We Buy</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
- <!-- Sell Your iPhone Section -->
- <section id="sell">
-    <h2>Sell Your iPhone</h2>
+  <section id="sell">
+    <h2>We Buy Your Device</h2>
+    <p>Sell your device to us! Provide the details below, and we'll get back to you with an offer.</p>
     <form id="sell-form">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required>
+      <div class="form-container">
+        <div class="form-column">
+          <h3>Device Details</h3>
+          <label for="device-model">Device Model:</label>
+          <input type="text" id="device-model" name="device-model" placeholder="e.g., iPhone 12 Pro" required>
 
-      <label for="model">iPhone Model:</label>
-      <input type="text" id="model" name="model" required>
+          <label for="device-storage">Storage Capacity:</label>
+          <select id="device-storage" name="device-storage" required>
+            <option value="" disabled selected>Select storage</option>
+            <option value="32GB">32GB</option>
+            <option value="64GB">64GB</option>
+            <option value="128GB">128GB</option>
+            <option value="256GB">256GB</option>
+            <option value="512GB">512GB</option>
+          </select>
 
-      <label for="storage">Storage</label>
-      <input type="text" id="storage" name="storage" required>
+          <label for="device-condition">Condition:</label>
+          <select id="device-condition" name="device-condition" required>
+            <option value="" disabled selected>Select condition</option>
+            <option value="Like New">Like New</option>
+            <option value="Good">Good</option>
+            <option value="Fair">Fair</option>
+            <option value="Needs Repair">Needs Repair</option>
+          </select>
 
-      <label for="price">Price:</label>
-      <input type="number" id="price" name="price" required>
+          <label for="device-info">Additional Information:</label>
+          <textarea id="device-info" name="device-info" rows="4" placeholder="Any issues or accessories included?"></textarea>
+        </div>
 
-      <button type="submit">List Item</button>
+        <div class="form-column">
+          <h3>Contact Information</h3>
+          <label for="seller-name">Your Name:</label>
+          <input type="text" id="seller-name" name="seller-name" placeholder="Your full name" required>
+
+          <label for="seller-email">Email Address:</label>
+          <input type="email" id="seller-email" name="seller-email" placeholder="your.email@example.com" required>
+
+          <label for="seller-phone">Phone Number:</label>
+          <input type="tel" id="seller-phone" name="seller-phone" placeholder="+233 123 456 789" required>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="cta-button">Submit Sell Request</button>
+      </div>
+      <div class="success-message">Sell request submitted successfully!</div>
     </form>
   </section>
 
-
   <footer>
-    <p>&copy; 2025 iPhone Hub. All Rights Reserved.</p>
+    <p>© 2025 Big Morny Gadgets. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/morny_harrison_edem?igsh=MXFhd3hmMXpla3BqZg%3D%3D&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/morny-harrison?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://snapchat.com/t/IqqIv9SU" aria-label="Snapchat"><i class="fab fa-snapchat"></i></a>
+    </div>
   </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>

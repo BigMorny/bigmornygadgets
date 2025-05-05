@@ -3,55 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iPhone Repair - iPhone Hub</title>
+  <title>Big Morny Gadgets - Repair Your Device</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>iPhone Repair</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="swap.html">Swap</a></li>
-        <li><a href="repair.html">Repair</a></li>
-        <li><a href="we-buy.html">We Buy</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
+    <div class="header-container">
+      <h1>Big Morny Gadgets</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="swap.html">Swap</a></li>
+          <li><a href="repair.html" class="active">Repair</a></li>
+          <li><a href="we-buy.html">We Buy</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Repair Form Section -->
   <section id="repair">
-    <h2>Request a Repair</h2>
-    <p>Fill in your details, and describe the problem with your iPhone.</p>
-
+    <h2>Repair Your Device</h2>
+    <p>Get your device fixed by our expert technicians. Fill out the form below to request a repair.</p>
     <form id="repair-form">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required>
+      <div class="form-container">
+        <div class="form-column">
+          <h3>Device Details</h3>
+          <label for="device-model">Device Model:</label>
+          <input type="text" id="device-model" name="device-model" placeholder="e.g., iPhone 12" required>
 
-      <label for="contact">Phone Number:</label>
-      <input type="tel" id="contact" name="contact" required>
+          <label for="device-issue">Issue Description:</label>
+          <textarea id="device-issue" name="device-issue" rows="4" placeholder="Describe the problem (e.g., cracked screen, battery issue)" required></textarea>
 
-      <label for="model">iPhone Model:</label>
-      <input type="text" id="model" name="model" placeholder="e.g., iPhone 12" required>
+          <label for="device-condition">Condition:</label>
+          <select id="device-condition" name="device-condition" required>
+            <option value="" disabled selected>Select condition</option>
+            <option value="Like New">Like New</option>
+            <option value="Good">Good</option>
+            <option value="Fair">Fair</option>
+            <option value="Needs Repair">Needs Repair</option>
+          </select>
+        </div>
 
-      <label for="opened">Has the phone been opened before?</label>
-      <select id="opened" name="opened">
-        <option value="No">No</option>
-        <option value="Yes">Yes</option>
-      </select>
+        <div class="form-column">
+          <h3>Contact Information</h3>
+          <label for="repair-name">Your Name:</label>
+          <input type="text" id="repair-name" name="repair-name" placeholder="Your full name" required>
 
-      <label for="problem">Describe the problem:</label>
-      <textarea id="problem" name="problem" rows="4" placeholder="Explain the issue..." required></textarea>
+          <label for="repair-email">Email Address:</label>
+          <input type="email" id="repair-email" name="repair-email" placeholder="your.email@example.com" required>
 
-      <button type="submit">Submit Repair Request</button>
+          <label for="repair-phone">Phone Number:</label>
+          <input type="tel" id="repair-phone" name="repair-phone" placeholder="+233 123 456 789" required>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="cta-button">Submit Repair Request</button>
+      </div>
+      <div class="success-message">Repair request submitted successfully!</div>
     </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 iPhone Hub. All Rights Reserved.</p>
+    <p>© 2025 Big Morny Gadgets. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/morny_harrison_edem?igsh=MXFhd3hmMXpla3BqZg%3D%3D&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/morny-harrison?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://snapchat.com/t/IqqIv9SU" aria-label="Snapchat"><i class="fab fa-snapchat"></i></a>
+    </div>
   </footer>
 
   <script src="js/script.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
